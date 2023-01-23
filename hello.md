@@ -15,9 +15,11 @@ int main(){
 }
 ```
 :smile:   :smile:
+```
 <div align='left'>
 <img src=ai3.jpg width=50% />
 </div>
+```
 #### basic grammar
 >//**bool** variable true or false
 >//非0即true
