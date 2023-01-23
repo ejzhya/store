@@ -20,11 +20,11 @@ int main(){
 </div>
 #### basic grammar
 >//**bool** variable true or false
-//非0即true
-//**const** 常量限定符，*const int Months =12*; 初始化后编译器将不允许修改该常量
-//const 某些地方比 #define 方便在c++；定义符号常量用const
-cout.setf()
-cout.setf(ios_base::fixed, ios_base::floatfield);//fixed-point 规定输出精度的
+>//非0即true
+>//**const** 常量限定符，*const int Months =12*; 初始化后编译器将不允许修改该常量
+>//const 某些地方比 #define 方便在c++；定义符号常量用const
+>cout.setf()
+>cout.setf(ios_base::fixed, ios_base::floatfield);//fixed-point 规定输出精度的
 ```c++
 #include <iostream>
 int main(){
