@@ -14,3 +14,4 @@ git remote add [repository_name] [url]
 ```
 4.vscode中选择changes 中的要上传到缓存区的文件例如hello.md 点击`+`
 Message 处填入名字 `first` 点击`commit`此时存入本地，点击`···`处 选择`push to...` 选择要上传的仓库。
+5.
