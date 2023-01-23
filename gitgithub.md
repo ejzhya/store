@@ -36,4 +36,12 @@ git remote add origin git@github.com:ejzhya/fight.git
 git push origin master
 #出现提示错误can't be established
 写yes  注意不要只写y
-#详情看https://blog.csdn.net/ajianyingxiaoqinghan/article/details/70544159
+```
+#详情看https://blog.csdn.net/ajianyingxiaoqinghan/article/details/70544159 <br>
+#### Can't push refs to remote try running pull first to integrate your changes
+`You get this try running pull first to integrate your changes whenever your local branch and your remote branch are not on the same point, before your changes.`
+```
+解决方案：
+git pull --rebase origin branchname
+git push origin branchname
+```
