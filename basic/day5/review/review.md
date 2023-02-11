@@ -28,3 +28,10 @@ void f(int& x);
 f(y);//initialized when function is called;
 void f(int*& p);//指针的引用
 int&* p;//指向引用 illegal
+stash:Stash is a container that stores objects and can be expanded during running.
+Container is an object taht hold other objects.
+For most kinds of containers, the common interface is put() and get().
+this: the hidden parameter
+void Stash::initialize(int sz)=====void Stash::initialize(Stash* this, int sz)
+Stash a;
+a.initialize(10);=======Stash::initialize(&a,10);
