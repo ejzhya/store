@@ -1,0 +1,15 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+string& Test(string &temp_str)	  // 定义函数的返回值为引用类型
+{
+	return temp_str;
+}
+int main()
+{
+	string test("Hello world!");
+	auto out_put = Test(test);
+	cout << out_put << endl;
+}

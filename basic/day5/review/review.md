@@ -55,5 +55,16 @@ Standard header file structure:
 function overloading 函数重载：same function with different arguments list  
 相同的函数名有不同的形参，类中会根据输出的形参选择合适的函数  
 default argument 函数的默认参数要放在声明里面且从右往左写 int harpo(int n,int m=4,int j=5);
-class 4: container 
+class 4: container，STL c++标准库，类似python的库
+Collection objects are objects that can store an
+arbitrary number of other objects.
+the three parts of STL:  
+1.containers:Vector、Deque、List、Sets and Maps(HashMap)  
+2.Algorithms:some basic Algorithms(sort,search)
+3.Iterator:like Vector<int>::iterator p;//a pre-defined iterator for  vector class, can use it to print out the items in  vector;   
 
+class 5:namespace,const,global,static
+Student* f();//指针指向？返回一个指向类的指针
+Student& f();//引用引谁？返回成员
+
+void Student::say(){} 类里的函数，外部，：：作用域
