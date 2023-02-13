@@ -55,7 +55,7 @@ Standard header file structure:
 function overloading 函数重载：same function with different arguments list  
 相同的函数名有不同的形参，类中会根据输出的形参选择合适的函数  
 default argument 函数的默认参数要放在声明里面且从右往左写 int harpo(int n,int m=4,int j=5);
-class 4: container，STL c++标准库，类似python的库
+chapter 4: container，STL c++标准库，类似python的库
 Collection objects are objects that can store an
 arbitrary number of other objects.
 the three parts of STL:  
@@ -63,8 +63,22 @@ the three parts of STL:
 2.Algorithms:some basic Algorithms(sort,search)
 3.Iterator:like Vector<int>::iterator p;//a pre-defined iterator for  vector class, can use it to print out the items in  vector;   
 
-class 5:namespace,const,global,static
+chapter 5:namespace,const,global,static
 Student* f();//指针指向？返回一个指向类的指针
 Student& f();//引用引谁？返回成员
 
 void Student::say(){} 类里的函数，外部，：：作用域
+friend 友元：私有成员所有者授权别人访问
+
+chapter 6:  
+overview const叫常变量也是变量:must be initialized
+一个cpp文件作为一个compile unit 。若其他cpp要调用其他cpp的变量，exter链接   
+函数声明 void f(int,int); 函数定义 void f(int i,int j){} 函数调用f(1,2);  
+`g++ -std=c++ a.cpp`  
+void f() const{} void f(){} 在类里面overload, const导致了参数argument表不一样，虽然函数名一样 
+class 成员变量const，则该变量必须放在构造函数或者初始化函数，该变量必须被初始化  
+static 只初始化一次
+
+chapter 7:inheritance and polymorphism
+
+

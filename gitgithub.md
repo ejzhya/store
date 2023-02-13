@@ -15,12 +15,13 @@ git remote add [repository_name] [url]
 ```
 4.vscode中选择changes 中的要上传到缓存区的文件例如hello.md 点击`+`
 Message 处填入名字 `first` 点击`commit`此时存入本地，点击`···`处 选择`push to...` 选择要上传的仓库。
-##### ssh法
-1.生成ssh的一对钥匙
-`id_rsa` `id_rsa.pub` 
-`ssh-keygen -t rsa "email"`
-`ls -a`在隐藏文件`/home/.ssh/id_rsa.pub`下复制公钥,`放到github的ssh钥匙设置里
-```
+##### ssh法（我用的这种，上面那种试了以后感觉不实用）
+1.生成ssh的一对钥匙  
+先执行c看有没有已生成的公钥，没有则：
+a.`id_rsa` `id_rsa.pub` 
+b.`ssh-keygen -t rsa "email"`
+c.`ls -a`在隐藏文件`/home/.ssh/id_rsa.pub`下复制公钥,`放到github的ssh钥匙设置里
+2.git  
 #install git
 sudo apt-get install git
 #选择你后面要上传代码的文件进行git仓库初始化
@@ -29,10 +30,10 @@ git init
 git add file  or git add ./
 #git status 查看状态
 #推送至本地仓库
-git commit -m "banch name"
-#推送至远程仓库，创建地址 origin是自己取的名字
+git commit -m "banchname"
+#推送至远程仓库，创建地址 origin是自己给远程仓库取的名字
 git remote add origin git@github.com:ejzhya/fight.git
-#推送
+#将master分支推送至你的远程仓库origin
 git push origin master
 #出现提示错误can't be established
 写yes  注意不要只写y
