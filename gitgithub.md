@@ -20,24 +20,25 @@ Message 处填入名字 `first` 点击`commit`此时存入本地，点击`···
 先执行c看有没有已生成的公钥，没有则：
 a.`id_rsa` `id_rsa.pub` 
 b.`ssh-keygen -t rsa "email"`
-c.`ls -a`在隐藏文件`/home/.ssh/id_rsa.pub`下复制公钥,`放到github的ssh钥匙设置里
+c.`ls -a`在隐藏文件`/home/.ssh/id_rsa.pub`下复制公钥,`放到github的ssh钥匙设置里  
+
 2.git  
 #install git
-sudo apt-get install git
-#选择你后面要上传代码的文件进行git仓库初始化
-git init
-#选择你要上传到缓存去的文件
-git add file  or git add ./
-#git status 查看状态
-#推送至本地仓库
-git commit -m "banchname"
-#推送至远程仓库，创建地址 origin是自己给远程仓库取的名字
-git remote add origin git@github.com:ejzhya/fight.git
-#将master分支推送至你的远程仓库origin
-git push origin master
-#出现提示错误can't be established
-写yes  注意不要只写y
-```
+sudo apt-get install git  
+#选择你后面要上传代码的文件进行git仓库初始化  
+git init  
+#选择你要上传到缓存去的文件  
+git add file  or git add ./  
+#git status 查看状态  
+#推送至本地仓库  
+git commit -m "banchname" 
+#推送至远程仓库，创建地址 origin是自己给远程仓库取的名字  
+git remote add origin git@github.com:ejzhya/fight.git  
+#将master分支推送至你的远程仓库origin  
+git push origin master  
+#出现提示错误can't be established  
+写yes  注意不要只写y  
+
 #详情看https://blog.csdn.net/ajianyingxiaoqinghan/article/details/70544159 <br>
 #### Can't push refs to remote try running pull first to integrate your changes
 `You get this try running pull first to integrate your changes whenever your local branch and your remote branch are not on the same point, before your changes.`
