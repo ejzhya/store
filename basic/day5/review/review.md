@@ -79,6 +79,30 @@ void f() const{} void f(){} 在类里面overload, const导致了参数argument�
 class 成员变量const，则该变量必须放在构造函数或者初始化函数，该变量必须被初始化  
 static 只初始化一次
 
-chapter 7:inheritance and polymorphism
+chapter 7  and chapter 8:inheritance and polymorphism, virtual function/destructor/baseclass
+inheritance class relationship:ls-a
+not inherited:
+Constructors
+– synthesized constructors use memberwise initialization
+– In explicit copy ctor, explicity call base-class copy ctor
+or the default ctor will be called instead.
+• Destructors
+• Assignment operation
+– synthesized operator= uses memberwise assignment
+– explicit operator= be sure to explicity call the base
+class version of operator=
+• Private data is hidden, but still present 
+base class 要用virtual function ，virtual destructor ，如果子类要命名与父类相同函数(overriding)，析构...  
+virtual void fun()=0;纯虚函数 
+基类中添加了至少一个纯虚函数的基类称为抽象类
+当继承一个抽象类时，子类必须要将父类中的纯虚函数给具体实现，不然继承下来的子类依然是抽象类，是无法实例化的。
+纯虚函数 virtual void fun() = 0其实就是告诉编译器在抽象类的vftable中为该纯虚函数保留一个位置，但是该位置并没有存放相应的地址。是为了等待子类继承并具体实现
+how virtual work in c++?  
+vtable vpt指针  
+chapter 9:copy ctor拷贝构造
+若有指针要自己写拷贝构造函数，防止程序默认产生的程序指向同一个地址。  
+
+以上阶段复习结束
+
 
 
