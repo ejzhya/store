@@ -12,4 +12,14 @@ std::move()把任何类型变成右值 应用移动构造 具体。。。
 
 chapter 12：模板template元代码
 untyped list:stash  
-Function Template 函数模板 Class Template 类模板
+Function Template 函数模板 Class Template 类模板  
+template can use multiple typles
+```
+temple<class T1, class T2>
+class A{...};
+```
+Vector<Vector< double *>>//> >微软老的不加空格会报错  
+Vector< int (*)(Vector<double>&, int)>//放返回类型为int,传入参数为引用放double的vector和int的函数指针的vector
+
+编译调试方法 g++ -c vector.cpp 生成.o文件但不链接 ls vector.o浏览该文件
+ls -l vector.o  
