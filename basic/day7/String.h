@@ -13,6 +13,7 @@ class String
     }
     ~String(){}
     String(const String &s):m_rep(s.m_rep){}
+    void prints(){m_rep->ff();}//输出实现打印，这里调用了ucpoint的运算符重载->
     String &operator=(const String &s)
     {
         m_rep=s.m_rep;//let smart pointer do work!

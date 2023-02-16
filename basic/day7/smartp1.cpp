@@ -7,10 +7,16 @@
 using namespace std;
 
 int main(){
-    String abc("abcdef");//
-    String def=abc;//shallow copy of abc
-    abc = "Hello world";//copy on write
-    cout<<"abc:"<<abc<<endl;
-    cout<<"def:"<<def<<endl;//hello world 1个.adcd 1个详见ppt吧
+    String abc="abcdef";//
+    //String def=abc;//shallow copy of abc
+    //abc = "Hello world";//copy on write
+    cout<<"abc:"<<endl;
+    abc.prints();//成功输出耶~在试试前面的注释
+    cout<<"-----------------"<<endl;
+    String def=abc;
+    abc="Hello world!";
+    abc.prints();
+    def.prints();
+    //cout<<"def:"<<def<<endl;//hello world 1个.adcd 1个详见ppt吧
     return 0;
 }

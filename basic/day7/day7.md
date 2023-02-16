@@ -18,3 +18,20 @@ operator->() is a unary operator单目运算符
 主要内容c++ 如何实现引用计数:   
 UCObject  
 cat Makefile
+
+chapter14 stream
+二进制文件 文本文件
+打开读 打开写分开比较合适  
+注意cout<<不能输出空的报<<不匹配 可以看看对象的返回函数是不是void的  
+flush() 拉环式冲马桶 有点搞笑  
+cout <<"Enter a number";  
+cout.flush();   
+
+chapter15 继承构造函数  
+类具有可派生性，基类的构造函数没有被子类继承
+1.在子类写父类的构造函数
+2.用using 隐式构造 虚继承不能用using
+浅拷贝 vs 深拷贝
+默认构造函数 浅拷贝，成员变量是指针时有害
+chapter16 class design  
+详见ppt

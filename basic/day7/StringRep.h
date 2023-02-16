@@ -3,6 +3,8 @@
 
 #include "UCObject.h"
 #include <cstring>
+#include <iostream>
+using namespace std;
 
 class StringRep : public UCObject
 {
@@ -35,6 +37,7 @@ int length() const
 int equal(const StringRep &sp) const{
     return (strcmp(m_pChars,sp.m_pChars)==0);
 }
+void ff(){cout<<m_pChars<<endl;}
 private:
 char *m_pChars;
 void operator=(const StringRep&){}
